@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fashion Store | Men</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap start -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/men.css" />
+  </head>
+  <body id="main">
+    <!-- NAVBAR BEGINS -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="logo"><img src="photos/logo.jpg" /></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="cart.html" class="cart"
+        ><img src="photos/cart.png" /><span>0</span></a
+      >
+      <a href="contact.html">Contact Us</a>
+      <a href="shop.html">Shop</a>
+      <a href="index.html">Home</a>
+    </div>
+    <!-- NAVBAR ENDS -->
+
+    <div class="content">
+      <div id="sidebar">
+        <ul>
+          <h2>Categories</h2>
+          <li>T-Shirts</li>
+          <li>Shirts</li>
+          <li>Pants</li>
+          <li>Jeans</li>
+          <li>Track Suit</li>
+          <li>Occassional</li>
+        </ul>
+      </div>
+      <div id="productGrid">
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/kids-harem-pant.jpg"
+              onmouseover="document.getElementById('kids-harem-pant').style.display = 'block'"
+              onmouseout="document.getElementById('kids-harem-pant').style.display = 'none'"
+            />
+            <a
+              href="#"
+              class="add-cart cart1"
+              id="kids-harem-pant"
+              onmouseover="document.getElementById('kids-harem-pant').style.display = 'block'"
+              onmouseout="document.getElementById('kids-harem-pant').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+          <p>Kids Harem Pant</p>
+          <p>Rs.999</p>
+        </div>
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/blue-t-shirt.jpg"
+              onmouseover="document.getElementById('blue-t').style.display = 'block'"
+              onmouseout="document.getElementById('blue-t').style.display = 'none'"
+            />
+            <a
+              href="#"
+              class="add-cart cart2"
+              id="blue-t"
+              onmouseover="document.getElementById('blue-t').style.display = 'block'"
+              onmouseout="document.getElementById('blue-t').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+          <p>Blue</p>
+          <p>Rs.499</p>
+        </div>
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/child-dress-shirt-back.jpg"
+              onmouseover="document.getElementById('child-dress-shirt-back').style.display = 'block'"
+              onmouseout="document.getElementById('child-dress-shirt-back').style.display = 'none'"
+            />
+            <a
+              href="#"
+              class="add-cart cart3"
+              id="child-dress-shirt-back"
+              onmouseover="document.getElementById('child-dress-shirt-back').style.display = 'block'"
+              onmouseout="document.getElementById('child-dress-shirt-back').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+          <p>Navy Dotted</p>
+          <p>Rs.599</p>
+        </div>
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/childs-raccoon-tee.jpg"
+              onmouseover="document.getElementById('childs-raccoon-tee').style.display = 'block'"
+              onmouseout="document.getElementById('childs-raccoon-tee').style.display = 'none'"
+            />
+            <a
+              href="#"
+              class="add-cart cart4"
+              id="childs-raccoon-tee"
+              onmouseover="document.getElementById('childs-raccoon-tee').style.display = 'block'"
+              onmouseout="document.getElementById('childs-raccoon-tee').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+          <p>Raccoon T</p>
+          <p>Rs.599</p>
+        </div>
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/cobalt-blue-t-shirt.jpg"
+              onmouseover="document.getElementById('cobalt-blue').style.display = 'block'"
+              onmouseout="document.getElementById('cobalt-blue').style.display = 'none'"
+            />
+            <a
+              href="#"
+              class="add-cart"
+              id="cobalt-blue"
+              onmouseover="document.getElementById('cobalt-blue').style.display = 'block'"
+              onmouseout="document.getElementById('cobalt-blue').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+          <p>Cobalt Blue</p>
+          <p>Rs.499</p>
+        </div>
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/green-t-shirt.jpg"
+              onmouseover="document.getElementById('green-t').style.display = 'block'"
+              onmouseout="document.getElementById('green-t').style.display = 'none'"
+            />
+            <a
+              href="#"
+              class="add-cart"
+              id="green-t"
+              onmouseover="document.getElementById('green-t').style.display = 'block'"
+              onmouseout="document.getElementById('green-t').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+
+          <p>Green</p>
+          <p>Rs.499</p>
+        </div>
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/kids-anchor-shirt.jpg"
+              onmouseover="document.getElementById('kids-anchor').style.display = 'block'"
+              onmouseout="document.getElementById('kids-anchor').style.display = 'none'"
+            />
+            <a
+              href="#kids-anchor"
+              class="add-cart"
+              id="kids-anchor"
+              onmouseover="document.getElementById('kids-anchor').style.display = 'block'"
+              onmouseout="document.getElementById('kids-anchor').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+
+          <p>Anchor T</p>
+          <p>Rs.499</p>
+        </div>
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/kids-harem-pant.jpg"
+              onmouseover="document.getElementById('harem-pant').style.display = 'block'"
+              onmouseout="document.getElementById('harem-pant').style.display = 'none'"
+            />
+            <a
+              href="#harem-pant"
+              class="add-cart"
+              id="harem-pant"
+              onmouseover="document.getElementById('harem-pant').style.display = 'block'"
+              onmouseout="document.getElementById('harem-pant').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+
+          <p>Harem Pant</p>
+          <p>Rs.999</p>
+        </div>
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/kids-t-shirt.jpg"
+              onmouseover="document.getElementById('kids-t').style.display = 'block'"
+              onmouseout="document.getElementById('kids-t').style.display = 'none'"
+            />
+            <a
+              href="#kids-t"
+              class="add-cart"
+              id="kids-t"
+              onmouseover="document.getElementById('kids-t').style.display = 'block'"
+              onmouseout="document.getElementById('kids-t').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+
+          <p>Kids T</p>
+          <p>Rs.499</p>
+        </div>
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/kids-whale-shirt.jpg"
+              onmouseover="document.getElementById('whale-t').style.display = 'block'"
+              onmouseout="document.getElementById('whale-t').style.display = 'none'"
+            />
+            <a
+              href="#whale-t"
+              class="add-cart"
+              id="whale-t"
+              onmouseover="document.getElementById('whale-t').style.display = 'block'"
+              onmouseout="document.getElementById('whale-t').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+
+          <p>Kids Whale T</p>
+          <p>Rs.499</p>
+        </div>
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/purple-t-shirt.jpg"
+              onmouseover="document.getElementById('purple-t').style.display = 'block'"
+              onmouseout="document.getElementById('purple-t').style.display = 'none'"
+            />
+            <a
+              href="#purple-t"
+              class="add-cart"
+              id="purple-t"
+              onmouseover="document.getElementById('purple-t').style.display = 'block'"
+              onmouseout="document.getElementById('purple-t').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+
+          <p>Purple</p>
+          <p>Rs.499</p>
+        </div>
+        <div class="gridItem">
+          <div class="image-card">
+            <img
+              src="pics/red-t-shirt.jpg"
+              onmouseover="document.getElementById('red-t').style.display = 'block'"
+              onmouseout="document.getElementById('red-t').style.display = 'none'"
+            />
+            <a
+              href="#red-t"
+              class="add-cart"
+              id="red-t"
+              onmouseover="document.getElementById('red-t').style.display = 'block'"
+              onmouseout="document.getElementById('red-t').style.display = 'none'"
+              >Add To Cart</a
+            >
+          </div>
+
+          <p>Red</p>
+          <p>Rs.499</p>
+        </div>
+      </div>
+    </div>
+    <!-- js -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/women.js"></script>
+  </body>
+</html>

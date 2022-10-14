@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Store | Receipt</title>
+    <link rel="stylesheet" href="css/orderReceipt.css" />
+  </head>
+  <body onload="generateRandomId();getDetails()">
+    <fieldset>
+      <legend>Order Receipt</legend>
+      <table>
+        <tr>
+          <td>Name</td>
+          <td id="orderName"></td>
+        </tr>
+
+        <tr>
+          <td>Address</td>
+          <td id="orderAddress"></td>
+        </tr>
+
+        <tr>
+          <td>Mobile Number</td>
+          <td id="orderMobileNumber"></td>
+        </tr>
+
+        <tr>
+          <td>Quantity</td>
+          <td id="orderQuantity"></td>
+        </tr>
+
+        <tr>
+          <td>Price</td>
+          <td id="orderPrice"></td>
+        </tr>
+
+        <tr>
+          <td>Order ID</td>
+          <td id="orderId"></td>
+        </tr>
+
+        <tr>
+          <td>Seller</td>
+          <td>Fashion Store</td>
+        </tr>
+      </table>
+    </fieldset>
+    <a href="index.html"><button>Continue Shopping</button></a>
+    <script src="js/main.js"></script>
+    <script src="js/women.js"></script>
+    <script src="js/details.js"></script>
+  </body>
+</html>

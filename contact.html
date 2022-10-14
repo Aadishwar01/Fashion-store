@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fashion Store | Contact Us</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+  </head>
+  <body id="main">
+    <!-- NAVBAR BEGINS -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="logo"><img src="photos/logo.jpg" /></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="cart.html" class="cart"
+        ><img src="photos/cart.png" /><span>0</span></a
+      >
+      <a href="contact.html">Contact Us</a>
+      <a href="shop.html">Shop</a>
+      <a href="index.html">Home</a>
+    </div>
+    <!-- NAVBAR ENDS -->
+
+    <div class="image">
+      <img src="photos/contact-us.svg" />
+    </div>
+
+    <div class="itembar">
+      <div class="item1">
+        <form
+          onsubmit="return validateName() && validatePhone() && validateEmail()"
+          action="contact.html"
+        >
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            id="Name"
+            onblur="validateName()"
+            required
+          /><span id="sName"> </span> <br />
+          <label for="contact">Contact No:</label><br />
+          <input
+            type="number"
+            name="contact"
+            placeholder="98765xxxxx"
+            maxlength="10"
+            id="Phone"
+            onblur="validatePhone()"
+            required
+          /><span id="sPhone"> </span><br />
+          <label for="email">Email-Id:</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="abc@gmail.com"
+            id="Email"
+            onblur="validateEmail()"
+            required
+          /><span id="sEmail"> </span><br />
+          <label for="query">Query:</label><br />
+          <textarea
+            name="query"
+            placeholder="Explain your issue here"
+            required
+          ></textarea
+          ><br />
+          <button
+            type="submit"
+            onclick="alert('Your form have been submitted')"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <div class="item2">
+        <h1>Hello. What can we help you with?</h1>
+
+        <div class="cards">
+          <img src="photos/package.svg" />
+          <a href="">Your Orders</a>
+          <p>Track Packages<br />Edit or Cancel orders</p>
+        </div>
+        <div class="cards">
+          <img src="photos/shipping.svg" />
+          <a href="">Return & Refunds</a>
+          <p>Return or Replace items<br />Print return mailing labels</p>
+        </div>
+        <div class="cards">
+          <img src="photos/home.svg" />
+          <a href="">Manage Address</a>
+          <p>Add your address<br />Update your address</p>
+        </div>
+        <div class="cards">
+          <img src="photos/pay.svg" />
+          <a href="">Payment Settings</a>
+          <p>Add payment methods<br />Edit payment methods</p>
+        </div>
+        <div class="cards">
+          <img src="photos/virus.svg" />
+          <a href="">COVID-19</a>
+          <p>FAQs about the impact on ordering</p>
+        </div>
+        <div class="cards">
+          <img src="photos/digital-assistant.svg" />
+          <a href="">Digital Assistance</a>
+          <p>Find device help & support<br />Troubleshoot issues</p>
+        </div>
+
+        <h2>Issue not listed above???</h2>
+        <p id="abc">To tell us your query click below</p>
+        <a href="#Name"
+          ><img
+            src="photos/form.svg"
+            style="height: 50px; width: 50px"
+            id="formlink"
+        /></a>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/women.js"></script>
+    <script src="js/details.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fashion Store | Details</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/details.css" />
+  </head>
+  <body id="main">
+    <!-- NAVBAR BEGINS -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="logo"><img src="photos/logo.jpg" /></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="cart.html" class="cart"
+        ><img src="photos/cart.png" /><span>0</span></a
+      >
+      <a href="contact.html">Contact Us</a>
+      <a href="shop.html">Shop</a>
+      <a href="index.html">Home</a>
+    </div>
+    <!-- NAVBAR ENDS -->
+
+    <div class="details-container" id="detailForm">
+      <form action="pay.html">
+        <label class="field-label">Name</label>
+        <input
+          type="text"
+          class="fields"
+          id="fname"
+          onchange="javascript:giveName()"
+          required
+        />
+        <br />
+        <label class="field-label">House Number/Flat Number</label>
+        <input
+          type="text"
+          maxlength="4"
+          class="fields"
+          id="houseNumber"
+          onchange="javascript:giveAddress('houseNumber')"
+          required
+        />
+        <br />
+        <label class="field-label">City</label>
+        <input
+          type="text"
+          class="fields"
+          id="city"
+          onchange="javascript:giveAddress('city')"
+          required
+        />
+        <br />
+        <label class="field-label">State</label>
+        <input
+          type="text"
+          class="fields"
+          id="state"
+          onchange="javascript:giveAddress('state')"
+          required
+        />
+        <br />
+        <label class="field-label">Pin Code</label>
+        <input
+          type="text"
+          maxlength="6"
+          id="pinCode"
+          onchange="javascript:giveAddress('pinCode')"
+          class="fields"
+          required
+        />
+        <br />
+        <label class="field-label">Mobile Number</label>
+        <input
+          type="tel"
+          class="fields"
+          id="mainMobileNumber"
+          onchange="javascript:getMobileNumber()"
+          required
+        />
+        <br />
+        <label class="field-label">Alternate Mobile Number(optional)</label>
+        <input type="tel" class="fields" optional />
+        <br />
+        <input type="submit" value="Proceed" id="proceed" />
+      </form>
+    </div>
+
+    <!-- js -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/women.js"></script>
+    <script src="js/details.js"></script>
+  </body>
+</html>
